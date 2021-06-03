@@ -1,0 +1,176 @@
+@font-face{
+    font-family:overlock;
+    src:url("../fonts/overlock.ttf");
+}
+@font-face {
+    font-family: Lato;
+    src: url("../fonts/Lato-Light.ttf");
+}
+body{
+    margin:0;
+    padding:0;
+    font-size:100%;
+    font-family: overlock;
+}
+button{
+    border:none;
+    font-family: Lato;
+    font-weight:700;
+}
+input{
+    border:none;
+}
+button, input{
+    outline: none;
+}
+.main_widget, .signup_main_widget{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    position: relative;
+    height:100%;
+    top:0;
+    left:0;
+}
+.signup_main_widget{
+    position: relative;
+    display:none;
+}
+.signup_main_widget .right_widget .input_field i{
+    position: relative;
+    top:1.8rem;
+    left:4%;
+}
+.left_widget{
+    width:44%;
+    padding: 3%;
+    margin:0 0%;
+    display:Flex;
+    height:35rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background:rgb(71, 246, 71);
+    border-radius:0 0 30rem 0;
+    color:white;
+    animation-name:fade;
+    animation-duration:4s;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+}
+.signup_main_widget .right_widget{
+    width:44%;
+    padding: 3%;
+    margin:0 0%;
+    display:Flex;
+    height:35rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:black;
+    border-radius:0 0 0 10rem;
+}
+.signup_main_widget .left_widget{
+    border-radius:0 0 0 30rem;
+}
+.left_widget img{
+    padding:2%;
+    border-radius:50%;
+    border:1px solid grey;
+}
+.right_widget{
+    width:40%;
+    padding:3%;
+    margin:2%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.left_widget h3{
+    font-size:1.2rem;
+}
+.left_widget button{
+    padding:2%;
+    width:40%;
+    border: 1px solid white;
+    color:white;
+    background:transparent;
+    border-radius:10rem;
+    font-weight: 700;;
+}
+
+/* Inputs */
+.input_field{
+    width:90%;
+}
+.input_field input{
+    width:100%;
+    padding:3% 0 3% 12%;
+    background:transparent;
+    border-radius:10rem;
+    box-shadow:0px 0px 2px grey;
+}
+.input_field i{
+    position: relative;
+    top:1.8rem;
+    left:4%;
+}
+.right_widget button{
+    width:22rem;
+    padding:3% 0;
+    color:white;
+    background:rgb(71, 246, 71);
+    border-radius:10rem;
+    margin:2rem 0;
+    cursor:pointer;
+}
+.right_widget button:hover{
+    color:rgb(71, 246, 71);
+    background: transparent;
+    border: 1px solid rgb(71, 246, 71);
+}
+
+/* Social Logins */
+.social_btn{
+    margin:1rem 0;
+    display:Flex;
+    justify-content: space-around;
+}
+.social_btn i{
+    font-size:1.2rem;
+    color:black;
+    border-radius: 10rem;
+    padding:2%;
+    background: #f2f2f2;
+}
+
+/* Mobile Mode */
+@media screen and (max-width:600px){
+    .left_widget{
+        display:none;
+    }
+    .right_widget{
+        width:100%;
+    }
+    .input_field{
+        width:18rem;
+    }
+    .input_field input{
+        width:88%;
+        padding:4% 0 4% 12%;
+    }
+    .right_widget button{
+        width:100%;
+    }
+}
+
+/* Animation */
+@keyframes fade{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity:1;
+    }
+}

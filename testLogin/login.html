@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/uiIcons.css">
+    <link rel="stylesheet" href="CSS/all.css">
+    <title>Login Page </title>
+</head>
+<body>
+    <div class="main_widget">
+        <div class="left_widget">
+            <img src="images/favicon.ico" alt="">
+            <h3>Welcome Aboard</h3>
+            <button class="signup_btn">Sign Up</button>
+        </div>
+        
+        <div class="right_widget">
+            <h2>Welcome Back</h2>
+            <h3> Log In </h3>
+
+            <form action="">
+                <div class="input_field">
+                    <i class="fi-rr-user"></i>
+                    <input type="text" placeholder="username">
+                </div>
+                <div class="input_field">
+                    <i class="fi-rr-lock"></i>
+                    <input type="password" placeholder="password" />
+                </div>
+
+                <button>Log In</button>
+
+                <p>Or Sign in with: </p>
+
+                <div class="social_btn">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-google"></i>
+                    <i class="fab fa-linkedin"></i>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+    <!-- Sign Up Widget -->
+
+    <div class="signup_main_widget">
+        <div class="right_widget">
+            <h2>Welcome Aboard</h2>
+            <h3> Sign Up </h3>
+
+            <form action="">
+                <div class="input_field">
+                    <i class="fi-rr-envelope"></i>
+                    <input type="email" placeholder="Email Address">
+                </div>
+                <div class="input_field">
+                    <i class="fi-rr-user"></i>
+                    <input type="password" placeholder="Password">
+                </div>
+                <div class="input_field">
+                    <i class="fi-rr-check"></i>
+                    <input type="password" placeholder="Confirm Password" />
+                </div>
+
+                <button>Sign Up</button>
+
+                <p>Or Sign Up with: </p>
+
+                <div class="social_btn">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-google"></i>
+                    <i class="fab fa-linkedin"></i>
+                </div>
+            </form>
+        </div>
+
+        <div class="left_widget">
+            <img src="images/favicon.ico" alt="">
+            <h3>Welcome back</h3>
+            <button class="login_btn"> <a href="#"></a>Sign In</button>
+        </div>
+        
+
+    </div>
+
+
+</body>
+
+<script>
+    var signup_widget = document.getElementsByClassName("signup_main_widget")[0];
+    var signup_btn = document.getElementsByClassName("signup_btn")[0];
+    var login_widget = document.getElementsByClassName("main_widget")[0];
+    var login_btn =document.getElementsByClassName("login_btn")[0];
+
+    signup_btn.onclick = function(){
+        signup_widget.style.display = "flex";
+        login_widget.style.display = "none";
+    }
+    login_btn.onclick = function(){
+        signup_widget.style.display = "none";
+        login_widget.style.display = "flex";
+    }
+
+</script>
+</html>
